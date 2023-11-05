@@ -1,0 +1,34 @@
+.list-link{
+    color: rgba(255, 255, 255, 0.316);
+    font-size: 18px;
+}
+
+.list-link li{
+    padding: 15px 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.list-link li:hover{
+    color: white
+}
+
+.name{
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 0 2px 10px rgba(0,0,0,.5);
+    color: white;
+    background-color: #00a3e1;
+    opacity: 0.8;
+}
+
+li.active{
+    color: white;
+}
