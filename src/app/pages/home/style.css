@@ -58,3 +58,15 @@
     text-decoration: underline;
     text-decoration-color: #00a3e1;
 }
+
+@media screen and (max-width: 768px) {
+    #Home h1{
+        font-size: 36px;
+        text-wrap: wrap;
+        text-align: center;
+    }
+    #Home h2{
+        font-size: 18px;
+    }
+    
+}

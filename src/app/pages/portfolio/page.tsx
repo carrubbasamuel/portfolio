@@ -1,27 +1,13 @@
 "use client"
+
+
 import { motion } from 'framer-motion';
-import { useState } from 'react';
+import { MdWork } from 'react-icons/md';
+import Card from '../../components/card';
 import './style.css';
 
 const Portfolio = () => {
-    const [hovered, setHovered] = useState(false);
-    const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
-
-    const handleMouseMove = (e: any) => {
-        const { clientX, clientY } = e;
-        const rect = e.target.getBoundingClientRect();
-
-        const offsetX = (clientX - rect.left - rect.width / 2) / 10; 
-        let offsetY;
-
-        if (clientY > rect.top + rect.height / 2) {
-            offsetY = (rect.top + rect.height / 2 - clientY) / 10;
-        } else {
-            offsetY = -(clientY - (rect.top + rect.height / 2)) / 10;
-        }
-
-        setMousePos({ x: offsetX, y: offsetY });
-    }
+    
 
     return (
         <motion.div
@@ -31,22 +17,18 @@ const Portfolio = () => {
             exit={{ opacity: 0 }}
         >
             <section id='Portfolio'>
-                <div 
-                    className={`container card ${hovered ? 'hovered' : ''}`}
-                    onMouseEnter={() => setHovered(true)}
-                    onMouseLeave={() => {setHovered(false); setMousePos({ x: 0, y: 0 })}}
-                    onMouseMove={handleMouseMove}
-                    style={{ 
-                        transform: `rotateX(${hovered ? mousePos.y * 2 : 0}deg) rotateY(${mousePos.x * 2}deg)`,
-                        transformOrigin: 'center',
-                        boxShadow: `0px ${hovered ? '30px' : '0px'} 30px rgba(0, 0, 0, 0.1)`
-                    }}
-                >
-                    <div className='card-body'>
-                        <h3 className='card-title'>Card title</h3>
-                        <p className='card-text'>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href='#' className='btn btn-primary'>Go somewhere</a>
-                    </div>
+                <div className='flex justify-between p-10 items-center title'>
+                    <h1>Portfolio</h1>
+                    <MdWork size={36} />
+                </div>
+                <p>
+                    Ecco alcuni i miei lavori piu recenti se vuoi saperne di piu visita il mio profilo <a href='https://github.com/carrubbasamuel' target='_blanck'>GitHub</a> dove ogni giorno sviluppo i progetti a cui sto lavorando.
+                </p>
+                
+
+                <div id='work' className='flex flex-col sm:flex-row gap-5 p-0 sm:p-10'>
+                    <Card title='Jecko' url='https://github.com/carrubbasamuel/Jecko' image='/assets/jecko.png' description='MERN stack' />
+                    <Card title="V-Real" url='https://v1-peppe.vercel.app/' image='/assets/vreal.png' description='Next.js' />
                 </div>
             </section>
         </motion.div>

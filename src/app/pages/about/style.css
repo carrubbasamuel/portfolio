@@ -1,0 +1,150 @@
+#About{
+    overflow-y: scroll;
+    height: 100vh;
+    width: 100%;
+    background-color: #000000e1;
+    padding: 30px;
+}
+
+#About h1{
+    font-family: "Playfair Display", serif;
+    font-size: 36px;
+    letter-spacing: 1.5px;
+    line-height: 1em;
+    text-transform: capitalize;
+    position: relative;
+    color: #00a3e1;
+    font-weight: 700;
+    display: inline;
+    word-break: break-word;
+}
+
+
+#About svg{
+    color: #00a3e1;
+}
+
+#About .title{
+    border-bottom: dotted 1px rgba(85, 85, 85, 0.896);
+}
+
+.personal-info h2{
+    font-size: 28px;
+    font-family: 'Playfair display', serif;
+    color: #00a3e1;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.personal-info p{
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+
+.personal-info span{
+    font-size: 18px;
+    font-weight: 100;
+    color: white;
+    border-bottom: 1px solid #00a3e1;
+}
+
+
+.personal-text{
+    width: 800px;
+}
+
+@media screen and (max-width: 768px) {
+    #About h1{
+        font-size: 36px;
+    }
+
+    .personal-text h2{
+        margin-top: 10px;
+        font-size: 18px!important;
+    } 
+
+    .personal-text{
+        width: 100%;
+    }
+}
+
+.personal-text p{
+    margin-top: 10px;
+    color: white;
+    font-size: 14px;
+}
+
+.personal-text h2{
+    font-size: 28px;
+    font-family: 'Playfair display', serif;
+    color: #00a3e1;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.personal-text span{
+    font-weight: 700;
+    color: #00a3e1;
+}
+
+.btn-dw{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    border: 1px solid #00a3e1;
+    border-radius: 5px;
+    color: #00a3e1;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 20px;
+    
+}
+
+
+
+.btn-dw:hover{
+    background-color: #00a3e1;
+    color: white!important;
+}
+
+
+.btn-dw svg{
+    margin-right: 5px;
+    
+}
+
+.btn-dw:hover svg{
+    color: white!important;
+}
+
+
+#About::-webkit-scrollbar {
+    width: 1px;
+    background-color: #534c4ce1;
+
+}
+
+#About::-webkit-scrollbar-thumb {
+    background-color: #00a3e1;
+    border-radius: 10px;
+}
+
+.container-skills{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+    
+}
+
+.container-skills img{
+    width: 60px;
+    height: 60px;
+}

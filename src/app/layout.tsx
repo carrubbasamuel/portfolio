@@ -1,4 +1,3 @@
-
 import NavBar from './components/navbar';
 import './globals.css';
 
@@ -10,11 +9,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <main className='flex w-full'>
+        <main className='flex flex-col sm:flex-row w-full'> 
           <NavBar />
-          
-            <div className='flex-1'>{children}</div>
-       
+          <div className='flex-1'>
+            {children}
+          </div>
         </main>
       </body>
     </html>
