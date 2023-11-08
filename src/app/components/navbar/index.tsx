@@ -24,7 +24,7 @@ export default function NavBar() {
           setIsMobile(window.innerWidth < 768);
         };
       
-        const handleClickOutside = (event) => {
+        const handleClickOutside = (event: any) => {
           const navElement = document.getElementById('nav');
       
           if (navElement && !navElement.contains(event.target)) {
@@ -99,10 +99,10 @@ export default function NavBar() {
                     </div>
                     <div className='container-footer'>
                         <div className='flex items-center gap-1 icon-social justify-center'>
-                            <a href="https://www.linkedin.com/in/samuel-carrubba-562456228/" target='_blanck'>
+                            <a title='linkedin' href="https://www.linkedin.com/in/samuel-carrubba-562456228/" target='_blanck'>
                                 <AiFillLinkedin size={18} />
                             </a>
-                            <a href="https://github.com/carrubbasamuel" target='_blanck'>
+                            <a title='github' href="https://github.com/carrubbasamuel" target='_blanck'>
                                 <AiFillGithub size={18} />
                             </a>
                         </div>

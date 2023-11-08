@@ -32,15 +32,15 @@ export default function About() {
             <div className='personal-text'>
               <h2>Full Stack Web Developer</h2>
               <p>
-                Benvenuti nel mio universo digitale. Sono un giovane di 24 anni con una profonda passione per l'informatica e la programmazione. Fin da giovane ho dedicato il mio tempo a esplorare il vasto mondo digitale, appassionandomi all'arte di creare soluzioni software innovative e intuitive.
+                Benvenuti nel mio universo digitale. Sono un giovane di 24 anni con una profonda passione per l&lsquo;informatica e la programmazione. Fin da giovane ho dedicato il mio tempo a esplorare il vasto mondo digitale, appassionandomi all&lsquo;arte di creare soluzioni software innovative e intuitive.
               </p>
               <p>
                 Le mie competenze spaziano attraverso diversi linguaggi e tecnologie, come <span>Next.js</span>, <span>React</span>, <span>JavaScript</span> e <span>TypeScript</span>. Sono esperto sia nel frontend che nel backend, con una conoscenza approfondita di concetti avanzati come <span>WebSockets</span>, <span>Node.js</span> e <span>Redux Toolkit</span>. Inoltre, ho una solida comprensione di <span>C++</span>, che mi ha permesso di affrontare progetti più complessi e stimolanti.
               </p>
               <p>
-                Nel mio set di strumenti troverete framework grafici di alto livello come <span>MaterialUI</span>, <span>Bootstrap</span> e <span>Tailwind</span>, che utilizzo per creare interfacce utente sorprendenti e coinvolgenti. Inoltre, ho una solida base di conoscenze in <span>HTML</span> e <span>CSS</span>, che mi permette di modellare l'aspetto e la sensazione di ogni progetto con cura e precisione.
+                Nel mio set di strumenti troverete framework grafici di alto livello come <span>MaterialUI</span>, <span>Bootstrap</span> e <span>Tailwind</span>, che utilizzo per creare interfacce utente sorprendenti e coinvolgenti. Inoltre, ho una solida base di conoscenze in <span>HTML</span> e <span>CSS</span>, che mi permette di modellare l&lsquo;aspetto e la sensazione di ogni progetto con cura e precisione.
 
-                Sono costantemente alla ricerca di nuove sfide e opportunità per affinare le mie abilità e creare soluzioni che superino le aspettative. Sono pronto a portare la mia passione e il mio impegno in ogni progetto che affronto. Grazie per aver visitato il mio portfolio e non vedo l'ora di collaborare con voi per realizzare progetti straordinari.
+                Sono costantemente alla ricerca di nuove sfide e opportunità per affinare le mie abilità e creare soluzioni che superino le aspettative. Sono pronto a portare la mia passione e il mio impegno in ogni progetto che affronto. Grazie per aver visitato il mio portfolio e non vedo l&lsquo;ora di collaborare con voi per realizzare progetti straordinari.
 
               </p>
 
@@ -61,7 +61,7 @@ export default function About() {
 
 
 
-          <div className='flex justify-center mb-10 mt-16 sm:mt-0 '>
+          {/* <div className='flex justify-center mb-10 mt-16 sm:mt-0 '>
             <h1>Skills</h1>
           </div>
           <div className='container-skills'>
@@ -83,7 +83,7 @@ export default function About() {
            
 
 
-          </div>
+          </div> */}
         </div>
       </section>
 
